@@ -1,9 +1,0 @@
-Join two tables to compare HealthScore, LadderScore (Happiness) and LifeExpectancy. 
-
-select B.Country, LegatumProsperityIndexHealthScore, LadderScore, HealthyLifeExpectancy
-from BestHealthcareWorld2023 as B
-join FigureWHR2023 as F
-on B.Country = F.Country
-where HealthyLifeExpectancy >70 
-order by LegatumProsperityIndexHealthScore desc
-
